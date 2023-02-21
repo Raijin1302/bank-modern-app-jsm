@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
+import "../index.css";
+
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleTrigger = () => setToggle(!toggle);
   return (
-    <nav className=" w-full flex justify-between items-center py-6 navbar">
+    <nav className=" w-full flex justify-between items-center py-6 navbar relative z-10">
       <img className="w-[124px] h-[32px]" src={logo} alt="" />
       <ul className="list-none hidden sm:flex flex-1 justify-end ">
         {navLinks.map((nav, index) => (
@@ -16,7 +18,9 @@ const NavBar = () => {
             } `}
             key={nav.id}
           >
-            <a href={nav.id}>{nav.title}</a>
+            <a href={nav.id} className="animation-nav-center ">
+              {nav.title}
+            </a>
           </li>
         ))}
       </ul>
