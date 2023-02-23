@@ -6,7 +6,7 @@
 
 @layer components {
   .animation-nav-center {
-    @apply relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:bg-secondary before:transition before:duration-500 before:hover:scale-x-100;
+    @apply relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:bg-secondary before:transition before:duration-500 before:hover:scale-x-100 before:delay-75;
   }
 }
 
