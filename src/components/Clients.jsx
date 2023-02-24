@@ -3,7 +3,10 @@ import { clients } from "../constants";
 import styles from "../style";
 const Clients = () => {
   return (
-    <section className="flex justify-center items-center my-6">
+    <section
+      id="clients"
+      className="flex justify-center items-center my-6 py-6"
+    >
       <div className="flex justify-center items-center flex-wrap w-full ">
         {clients.map((client) => (
           <div
