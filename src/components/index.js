@@ -7,10 +7,10 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
-import NavBar from "./Navbar";
+import NavigationBar from "./NavigationBar";
 
 export {
-  NavBar,
+  NavigationBar,
   Billing,
   CardDeal,
   Business,
